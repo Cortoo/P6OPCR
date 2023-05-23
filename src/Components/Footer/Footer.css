@@ -1,0 +1,17 @@
+.Footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
+    padding: 10px;
+    min-height: 200px;
+}
+
+.Footer img{
+    margin-bottom: 40px;
+} 

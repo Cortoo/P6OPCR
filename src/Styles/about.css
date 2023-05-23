@@ -1,0 +1,7 @@
+.about_global{
+    display:flex;
+    flex-direction: column;
+    padding-inline: 8rem;
+    margin-left: 60px;
+ 
+}
