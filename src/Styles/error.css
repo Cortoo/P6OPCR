@@ -1,0 +1,30 @@
+.erreur{
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 411px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FF6060;
+}
+
+.erreur h1{
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
+    margin: 1rem ;
+}
+
+.erreur p{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    margin: 0;
+}
+
+.erreur_infos_return{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+   
+    color: #FF6060;
+}

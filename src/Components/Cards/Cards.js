@@ -1,22 +1,23 @@
-import React from 'react';
-import "./Cards.css";
+import React from 'react'
+import "./Cards.css"
 import { Link } from 'react-router-dom';
 
-function Cards({ id, imageUrl, title }) {
-  const state = {
-    appartsId: id
-  };
-
+function Cards(props) {
+  
+  
+  
+  
   return (
-    //<Link to="/Appartements" state={state}>
-      <div className="cards">
-        <img src={imageUrl} alt="" />
+    
+    <Link to={`/Appartements/${props.id}`}>
+      <div className= "cards">
+        <img src= { props.imageUrl }  alt="" />
         <div className='global-title'>
-          <div className="title_card">{title}</div>
+        <div className = "title_card">{ props.title}</div>
         </div>
       </div>
-    //</Link>
+  </Link>
   );
 }
 
-export default Cards;
+export default Cards

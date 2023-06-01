@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Wrapper.css';
 
-const Wrapper = ({ title, content }) => {
+const Wrapper = (props) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleToggle = () => {
@@ -11,12 +11,12 @@ const Wrapper = ({ title, content }) => {
   return (
     <div className={`wrapper ${isExpanded ? 'expanded' : ''}`}>
       <div className="title-wrapper" onClick={handleToggle}>
-        <h2 className="title">{title}</h2>
+        <h2 className="title">{props.title}</h2>
         <div className="icon-wrapper">
         <i className={`fas ${isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
         </div>
       </div>
-      {isExpanded && <div className="content">{content}</div>}
+      {isExpanded && <div className="content">{props.content}</div>}
     </div>
   );
 };
