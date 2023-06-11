@@ -4,9 +4,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     justify-content: center;
-    padding-inline: 8rem;
+    padding-inline: 5rem;
     font-family: 'Montserrat', sans-serif;
     color:#ff6060 ;
+    margin-top: 34px;
    
 }
 
@@ -14,5 +15,11 @@
     justify-content: center;
     flex-basis: 50%;
     display: flex;
-    gap: 30px;
+    gap: 76px;
+}
+
+.wrapper-appart {
+    width: 250%;
+    padding: 0;
+    justify-content: space-between;
 }

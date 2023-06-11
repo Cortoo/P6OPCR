@@ -1,11 +1,20 @@
-.appartements-header{
+.appartements-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: 20px;
-    padding-inline: 8rem;
     font-family: 'Montserrat', sans-serif;
-    color:#ff6060 ;
-}
-
-.appartements-title h1{
+    color: #ff6060;
+    margin-bottom:26px ;
+  }
+  
+  .appartements-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .appartements-title h1 {
     margin-bottom: 0;
     margin-top: 0;
     font-size: 36px;
@@ -13,25 +22,27 @@
     line-height: 51px;
     letter-spacing: 0em;
     text-align: left;
-}
-
-.appartements-title h2{
+    white-space: nowrap;
+  }
+  
+  .appartements-title h2 {
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 18px;
     line-height: 142.6%;
     margin-top: 8px;
-}
-
-.appartements-filters{
+    margin-bottom: 20px;
+  }
+  
+  .appartements-filters {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     padding-bottom: 8px;
-}
-
-.appartements-filters span{
+  }
+  
+  .appartements-filters span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -44,58 +55,46 @@
     left: 0px;
     top: 0px;
     border-radius: 10px;
-
-}
-
-.appartements-header{
-    display: flex;
-    justify-content: space-between;
-    align-content:center ;
-}
-
-.appartements-owner{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    width: auto;
-}
-
-.name-firstname {
+    font-size: 14px;
+  }
+  
+  .appartements-owner {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    align-items: center;
+  }
+  .owner-identity {
+    display: flex;
+    flex-direction: row;
+  }
+  .owner-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-style: normal;
     font-weight: 500;
-    font-size: 25px; 
-    
-}
-
-.appartements-name-avatar{
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    align-items: center;
-}
-
-.appartements-owner-avatar img{
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .owner-photo img {
     width: 64px;
     height: 64px;
-    background: #C4C4C4;
+    background: #c4c4c4;
     border-radius: 50%;
-}
-
-.appartements-owner-stars{
+    margin-left: 10px;
+  }
+  
+  .owner-stars {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    gap: 3px;
     font-size: 35px;
-    width: 230px; 
-    color:#E3E3E3;
-}
-
-.full_star{
+    color: #e3e3e3;
+    margin-top: 10px;
+  }
+  
+  .full_star {
     color: #ff6060;
-}
+  }
+  

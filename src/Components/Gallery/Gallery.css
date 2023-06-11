@@ -2,12 +2,15 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 35px ;
-    padding:15px;
+    gap: 25px ;
+    padding-top: 15px;
     background-color: #F7F7F7 ;
     border-radius: 25px;
     min-height: 400px;
-    margin: 3rem 8rem;
+    margin: 3rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    
 }
 
 

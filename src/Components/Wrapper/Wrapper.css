@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
     border-radius: 10px;
   }
   
@@ -33,8 +32,8 @@
 
   .content {
     padding: 10px;
-    background-color :rgb(235, 225, 225);
+    background-color :#F7F7F7;
     color: #ff6060;
     font-weight: 400;
-    width: 90%;
+
   }

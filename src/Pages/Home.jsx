@@ -1,21 +1,49 @@
-import React from 'react';
+
 import '../Styles/home.css'
 import Banner from '../Components/Banner/Banner';
-import Footer from '../Components/Footer/Footer';
-import Navbar from '../Components/Navbar/Navbar';
-import Gallery from '../Components/Gallery/Gallery';
+import React, { useEffect, useState } from 'react';
+import "../Components/Gallery/Gallery.css";
+import Cards from '../Components/Cards/Cards'
+import LogementArray from '../assets/Datas/logements.json';
 
 
 
 
-const Home = () => {
+        const Gallery = () => {
+            const[apparts, setApparts] = useState([]);
+
+            useEffect(() => {
+                appartementsData();
+              }, []);
+            
+
+            function appartementsData () {   
+                console.log('Fetching data...');
+            fetch('logements.json')
+            .then((response) => response.json())
+                .then((res) => setApparts(res))
+                .catch(console.error);
+                
+                }
+            
+                return (
+                    <div className='Gallery'>
+                        {apparts.map((appart) =>(
+                            <Cards key= {appart.id}  title={appart.title} imageUrl={appart.cover}   id={appart.id} />
+            
+                        ))}
+                      
+                        
+                    </div>
+                );
+            };
+            
+
+            const Home = () => { 
     return (
         <div className='home'>
-            <Navbar/>
             <Banner/>
             <Gallery/> 
-            <Footer/>
-
         </div>
     );
 };

@@ -10,12 +10,12 @@ const Carrousel = (props) => {
   };
 
   const moveToNext = () => {
-    setCurrentPicture((currentPicture + 1) % pictures.lenght);
+    setCurrentPicture((currentPicture + 1) % pictures.length);
   };
   const moveToPrevious = () => {
     const newCurrentPicture = currentPicture - 1;
     if (newCurrentPicture < 0) {
-      setCurrentPicture(pictures.lenght - 1);
+      setCurrentPicture(pictures.length - 1);
       return;
     }
     setCurrentPicture(currentPicture - 1);
@@ -32,12 +32,10 @@ const Carrousel = (props) => {
         <i className="fas fa-regular fa-chevron-left"></i>
       </button>
       <span className="slide-counter">
-        {currentPicture + 1}/{pictures.lenght}
+        {currentPicture + 1}/{pictures.length}
       </span>
       <button className="btn-next" onClick={moveToNext}>
-        <span className="slide-counter">
-          {currentPicture + 1}/ {pictures.lenght}
-        </span>
+      <i className="fas fa-regular fa-chevron-right"></i>
       </button>
     </div>
   );

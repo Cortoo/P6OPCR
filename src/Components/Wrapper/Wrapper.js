@@ -9,9 +9,9 @@ const Wrapper = (props) => {
   };
 
   return (
-    <div className={`wrapper ${isExpanded ? 'expanded' : ''}`}>
-      <div className="title-wrapper" onClick={handleToggle}>
-        <h2 className="title">{props.title}</h2>
+    <div className={`wrapper ${isExpanded ? 'expanded' : ''} ${props.wrapperClassName}`}>
+      <div className={`title-wrapper ${props.titleWrapperClassName}`} onClick={handleToggle}>
+        <h2 className={`title ${props.titleClassName}`}>{props.title}</h2>
         <div className="icon-wrapper">
         <i className={`fas ${isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
         </div>

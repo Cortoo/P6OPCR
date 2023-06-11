@@ -3,13 +3,15 @@ import Home from "./Pages/Home.jsx";
 import About from './Pages/About';
 import Appartements from './Pages/Appartement';
 import Erreur from './Pages/Error';
+import Footer from './Components/Footer/Footer';
+import Navbar from "./Components/Navbar/Navbar.js";
 
 
 const App = () => {
 
   return (
     <div className="App">
-      
+      <Navbar/>
       <Routes>
       
         <Route path="/" element = {<Home />}> </Route>
@@ -18,7 +20,7 @@ const App = () => {
         <Route path='/*' element ={<Erreur />}/>
         
       </Routes>
-      
+      <Footer/>
     </div>
   );
 }
