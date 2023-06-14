@@ -21,22 +21,28 @@ const Carrousel = (props) => {
     setCurrentPicture(currentPicture - 1);
   };
 
+
+    
   return (
     <div className="img-banner">
       <div className="image_container">
         {pictures.map((pic, i) => (
           <img key={pic} src={pic} alt="" className={getClassName(i)}></img>
         ))}
-      </div>
+      </div> 
+      {pictures.length > 1 && (
+        <>
       <button className="btn-previous" onClick={moveToPrevious}>
         <i className="fas fa-regular fa-chevron-left"></i>
-      </button>
+      </button> 
       <span className="slide-counter">
         {currentPicture + 1}/{pictures.length}
       </span>
       <button className="btn-next" onClick={moveToNext}>
       <i className="fas fa-regular fa-chevron-right"></i>
-      </button>
+      </button> 
+      </>
+      )}
     </div>
   );
 };

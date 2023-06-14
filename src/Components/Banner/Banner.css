@@ -36,14 +36,20 @@
 
 
 
-@media screen and (width <= 769px ){
+@media screen and (max-width: 769px ){
     .banner{ 
        
         margin-top: 1rem;
         max-height: 335px;
         padding: 0;
     }
-     .banner img{
+     #banner_about img{
+        height: 223px;
+        width: 100%;
+        object-fit: cover;
+     }
+
+     .banner img {
         height: 111px;
      }
 

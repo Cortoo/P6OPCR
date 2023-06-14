@@ -25,6 +25,26 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
+    text-decoration: underline;
    
     color: #FF6060;
+}
+
+/* Media Query pour les appareils mobiles */
+@media (max-width: 768px) {
+    .erreur h1,
+    .erreur_infos_title {
+        margin-top: 195px;
+        font-size: 160px;
+        line-height: 142.6%;
+    }
+
+    .erreur p {
+        font-size: 24px;
+        line-height: 142.6%;
+    }
+
+    .erreur_infos_return {
+        font-size: 16px;
+    }
 }

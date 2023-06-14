@@ -4,6 +4,7 @@ import AppartementsHeader from '../Components/AppartHeader/AppartHeader';
 import Wrapper from '../Components/Wrapper/Wrapper';
 import '../Styles/Appartement.css'
 import Carrousel from '../Components/Carrousel/Carrousel';
+import Erreur from '../Pages/Error'
 
 const Appartements = () => {
 	const params = useParams();
@@ -25,7 +26,8 @@ const Appartements = () => {
     .catch(console.error);
 	}, [appartId]);
     
-    if (appart == null) { return (<div>Chargement...</div>) 
+    if (appart == null) { 
+	return <Erreur />
 	} else {
 	return (
 		<>

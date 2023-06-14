@@ -98,3 +98,45 @@
     color: #ff6060;
   }
   
+/* Media Queries pour les appareils mobiles */
+@media (max-width: 768px) {
+  .appartements-header {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .appartements-title h1 {
+    font-size: 28px;
+    line-height: 40px;
+    white-space: normal;
+  }
+
+
+  .appartements-title h2 {
+    font-size: 16px;
+  }
+
+  .appartements-filters span {
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .owner-name {
+    font-size: 16px;
+  }
+
+  .owner-photo img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .owner-stars {
+    font-size: 28px;
+  }
+
+
+.appartements-owner {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+}

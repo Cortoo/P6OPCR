@@ -8,7 +8,9 @@ const Navbar = () => {
         <div>
             <nav className='navbar'>
         <div className='navbar_logo'>
+        
             <img src={logo} alt='Logo de Kasa'/>
+        
         </div>
 <div className = "navbar_elements">
     <Link to="/">

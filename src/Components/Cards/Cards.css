@@ -54,10 +54,10 @@ a{
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 500;
-       
-        
-        
-        
+        padding-top: 14px;
     }
+    .cards img{
+        height: 75%;
+}
 
 }

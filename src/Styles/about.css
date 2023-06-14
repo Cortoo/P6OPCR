@@ -9,3 +9,11 @@
 .wrapper-about{
     width: 100%;
 }
+
+/* Media Queries pour les appareils mobiles */
+@media (max-width: 768px) {
+.about_global{
+    padding: 0;
+    margin-top: 19px ;
+}
+}
