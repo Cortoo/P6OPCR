@@ -1,0 +1,45 @@
+.appartements-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    color:#ff6060 ;
+    margin-top: 34px;
+   
+}
+
+.wrapper-description-global{
+    justify-content: center;
+    flex-basis: 50%;
+    display: flex;
+    gap: 76px;
+    max-width: 100%;
+}
+
+.wrapper-appart {
+    width: 250%;
+    padding: 0;
+    justify-content: space-between;
+}
+
+
+/* Media Query pour les appareils mobiles */
+@media (max-width: 768px) {
+    .appartements-card {
+        padding: 0.5rem;
+        margin-top: 20px;
+    }
+    
+    .wrapper-description-global {
+        gap: 10px;
+        display: block;
+    }
+
+    .wrapper-appart {
+        margin-top: 16px;
+        width: 100%;
+    }
+}

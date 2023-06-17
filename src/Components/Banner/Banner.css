@@ -7,7 +7,15 @@
     margin-top: 50px;
     padding-inline: 3rem;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 70px;
     
+}
+
+#banner_about {
+    margin-bottom: 20px;
+    padding-inline: 4rem;
+
+
 }
 
 .banner img{
@@ -26,6 +34,7 @@
     font-weight: 500;
     font-size: 48px;
     color: white;
+    top: 50%;
 }
 
 @media screen and (max-width: 980px){
@@ -42,6 +51,11 @@
         margin-top: 1rem;
         max-height: 335px;
         padding: 0;
+        margin-bottom: 10px;
+    }
+
+    #banner_about {
+        padding-inline: 0px;
     }
      #banner_about img{
         height: 223px;
@@ -60,5 +74,6 @@
         font-size: 24px;
         line-height: 24px;
         letter-spacing: 0em;
+        top: 30%
      }
 }

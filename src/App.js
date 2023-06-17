@@ -4,7 +4,7 @@ import About from './Pages/About';
 import Appartements from './Pages/Appartement';
 import Erreur from './Pages/Error';
 import Footer from './Components/Footer/Footer';
-import Navbar from "./Components/Navbar/Navbar.js";
+import Navbar from "./Components/Navbar/Navbar";
 
 
 const App = () => {

@@ -18,7 +18,6 @@ import LogementArray from '../assets/Datas/logements.json';
             
 
             function appartementsData () {   
-                console.log('Fetching data...');
             fetch('logements.json')
             .then((response) => response.json())
                 .then((res) => setApparts(res))
